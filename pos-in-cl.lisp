@@ -14,12 +14,6 @@
             (push (make-instance 'SecondHalfPrice) (gethash id id-promotions-map)))
         ids-of-secondhalfprice)
 
-(format t "for test ***********~%")
-(maphash #'(lambda (id promotions)
-             (format t "~A ~A~%" id promotions))
-         id-promotions-map)
-(format t "for test ***********~%")
-
 (defun checkout (price num &optional promotions)
   (let ((sub-cost (* price num)))
     (progn
