@@ -9,5 +9,6 @@
     :components ((:file "package-test")
                  (:module "t"
                           :components
-                          ((:file "parser")))))
+                          ((:file "parser")
+                           (:file "promotion")))))
 
